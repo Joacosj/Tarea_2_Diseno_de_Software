@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece - Actividad Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Tarea_2.css">
+</head>
+<body>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5">El Mundo de One Piece</h1>
+
+        <div id="carruselOnePiece" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner rounded border border-secondary">
+                <div class="carousel-item active">
+                    <img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2022/03/09/CB79D59E-4D36-4887-A17B-14796E0788BE/one-piece_98.jpg?crop=640,360,x0,y0&width=1900&height=1069&optimize=high&format=webply" class="d-block w-100" alt="Luffy y su tripulación">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://hanamidangos.blog/wp-content/uploads/2025/03/portada-el-going-merry-no-tiene-quien-le-escriba-resena-Hanami-Dango.png" class="d-block w-100" alt="El Going Merry">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.etsystatic.com/20072873/r/il/971549/6175636067/il_794xN.6175636067_dntk.jpg" class="d-block w-100" alt="El Grand Line">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselOnePiece" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselOnePiece" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4">
+                <h3 class="titulo-morado">La Gran Era Pirata</h3>
+                <p>Todo comenzó con las últimas palabras de Gol D. Roger, el Rey de los Piratas. Antes de ser ejecutado, reveló que su mayor tesoro, el "One Piece", estaba escondido en algún lugar del Grand Line. Esto desató la Gran Era de la Piratería, donde innumerables piratas zarparon con el sueño de encontrarlo y reclamar el título absoluto de los mares.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3 class="titulo-morado">Los Sombrero de Paja</h3>
+                <p>La historia sigue a Monkey D. Luffy, un joven que obtuvo poderes de goma tras comer accidentalmente una Fruta del Diablo. Inspirado por su ídolo de la infancia, el pelirrojo Shanks, Luffy emprende un viaje por el peligroso mar para encontrar el One Piece y reunir a su propia tripulación, buscando convertirse en el próximo Rey de los Piratas.</p>
+            </div>
+        </div>
+
+        <div class="accordion" id="acordeonOnePiece">
+            <div class="accordion-item bg-dark border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-light boton-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoUno" aria-expanded="false" aria-controls="colapsoUno">
+                        <strong>¿Qué son las Frutas del Diablo (Akuma no Mi)?</strong>
+                    </button>
+                </h2>
+                <div id="colapsoUno" class="accordion-collapse collapse" data-bs-parent="#acordeonOnePiece">
+                    <div class="accordion-body text-light">
+                        Son frutas místicas que otorgan poderes sobrehumanos a quienes las comen, a cambio de perder para siempre la capacidad de nadar. Se dividen en tres tipos principales: <strong>Paramecia</strong>, <strong>Zoan</strong> y <strong>Logia</strong>.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item bg-dark border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-light boton-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoDos" aria-expanded="false" aria-controls="colapsoDos">
+                        <strong>¿Qué es el Haki?</strong>
+                    </button>
+                </h2>
+                <div id="colapsoDos" class="accordion-collapse collapse" data-bs-parent="#acordeonOnePiece">
+                    <div class="accordion-body text-light">
+                        Es un poder misterioso que se encuentra en todos los seres vivos. Existen tres tipos: <strong>Haki de Observación</strong>, <strong>Haki de Armadura</strong> y el raro <strong>Haki del Rey</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
